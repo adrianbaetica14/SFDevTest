@@ -1,0 +1,11 @@
+<template>
+    <div class="weather-container">
+        <h1 class="forecast-title">Weather Forecast</h1>
+        <lightning-formatted-date-time value={tomorrowDate}></lightning-formatted-date-time>
+        <img src={weatherIcon}>
+        <div>
+            {weatherText}
+            <div><span class="temp">Max Temp:</span> {maxTemp} | <span class="temp">Min Temp:</span> {minTemp}</div>
+        </div>
+    </div>
+</template>
